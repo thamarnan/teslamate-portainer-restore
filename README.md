@@ -23,7 +23,7 @@ docker cp ./teslamate.bck 46eded4ad7b3:/tmp/teslamate.bck
 >[!note]
 >We are using just psql command without docker command since we're already in the docker instance
 >
->Correct output should shows bunch of output with lot of activity such as DROP, CREATE, ETC
+>Correct output should shows lot of activity such as DROP, CREATE, ETC
 ```
 root@46eded4ad7b3:/# psql -U teslamate << .  
 drop schema public cascade;  
@@ -42,10 +42,10 @@ AS 'SELECT public.cube(public.cube(public.cube(public.earth()*cos(radians(\$1))*
 >[!note]
 >We are using just psql command without docker command since we're already in the docker instance
 >
->Correct output should shows bunch of output with lot of activity such as SET CREATE, ALTER, etc
+>Correct output should shows bunch of activity such as SET CREATE, ALTER, etc; without ERROR
 ```
-cd /tmp
-psql -U teslamate -d teslamate < teslamate.bck
+root@46eded4ad7b3:/# cd /tmp
+root@46eded4ad7b3:/# psql -U teslamate -d teslamate < teslamate.bck
 ```
 
-8. restart all stack and check in grafana dashboard
+8. restart all container in the stack and check in grafana dashboard
