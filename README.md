@@ -1,5 +1,8 @@
 # TeslaMate Portainer Database Restore
 
+Overview:
+This set of instructions is designed to help users restore a TeslaMate database onto Portainer hosted machine. 
+
 1. from old machine, obtain teslamate.bck using method in https://docs.teslamate.org/docs/maintenance/backup_restore and place into machine that host portainer
 2. create new stack from official docker-compose.yml https://docs.teslamate.org/docs/installation/docker, make sure all things running
 3. ssh into machine that host portainer
