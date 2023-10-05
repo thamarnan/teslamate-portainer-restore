@@ -51,4 +51,4 @@ root@46eded4ad7b3:/# cd /tmp
 root@46eded4ad7b3:/# psql -U teslamate -d teslamate < teslamate.bck
 ```
 
-8. restart all container in the stack and check in grafana dashboard
+8. restart all container in the stack and check in grafana dashboard, once confirm, delete the teslamate.bck to clean up.
