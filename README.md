@@ -6,7 +6,7 @@
 4. find out container id
 
 ```
-#---find out container id
+#---find out container id of teslamate-database-1
 docker container ls
 
 #---copy teslamate.bck into container
